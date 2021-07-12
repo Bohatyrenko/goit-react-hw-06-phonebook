@@ -5,12 +5,12 @@ import { useState, useEffect } from 'react';
 import shortid from 'shortid';
 
 //helpers
-import getFilteredContacts from './helpers/filterContacts';
+import getFilteredContacts from '../../helpers/filterContacts';
 
 //Components
-import ContactForm from './components/ContactForm/ContactForm';
-import ContactList from './components/ContactList/ContactList';
-import ContactFilter from './components/ContactFilter/ContactFilter';
+import ContactForm from '../ContactForm/ContactForm';
+import ContactList from '../ContactList/ContactList';
+import ContactFilter from '../ContactFilter/ContactFilter';
 
 const initilState = {
   contacts: [],
