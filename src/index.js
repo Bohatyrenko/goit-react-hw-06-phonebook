@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import store from './redux/store';
 import { myAction } from './redux/actions';
 import App from './components/App/App';
@@ -11,7 +12,9 @@ console.log(store.dispatch(myAction));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );

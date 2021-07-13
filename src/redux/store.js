@@ -1,9 +1,11 @@
-import { createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 
-const reducer = (state = {}, action) => {
-  console.log(action);
-  return state;
-};
+const rootReducer = combineReducers({
+  phoneBook: {
+    contacts: [],
+    filter: '',
+  },
+});
 
 const store = createStore(reducer);
 
