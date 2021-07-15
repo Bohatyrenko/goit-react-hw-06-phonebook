@@ -1,24 +1,26 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import action from './phonebook-actions';
+import types from './phonebook-types';
 
-// const contacts = (state = [], action) => {
-//   return state;
+const itemReducer = (state = [], action) => {
+  return state;
+};
+
+const filterReducer = (state = '', action) => {
+  return state;
+};
+
+export default combineReducers({
+  itemReducer,
+  filterReducer,
+});
+
+// const reducer = (state = initilState, action) => {
+//   switch (action.type) {
+//     case 'phoneBook/AddContact':
+//       return [...action.payload, ...state];
+
+//     default:
+//       return state;
+//   }
 // };
-
-// const name = (state = '', action) => {
-//   return state;
-// };
-
-// const number = (state = '', action) => {
-//   return state;
-// };
-
-// const filter = (state = '', action) => {
-//   return state;
-// };
-
-// export default combineReducers({
-//   contacts,
-//   name,
-//   number,
-//   filter,
-// });
