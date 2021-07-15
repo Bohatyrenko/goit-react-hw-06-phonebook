@@ -97,8 +97,18 @@ const ContactForm = ({ onSetName, onAddContact, name, number }) => (
         // onChange={options.handleChange}
       />
     </label>
-    <button style={{marginTop: '10px'}} type="submit">Отправить</button>
+    <button style={{ marginTop: '10px' }} type="submit">
+      Отправить
+    </button>
   </form>
 );
+
+// const mapStateToProps = state => ({
+//   contacts: state.contacts.items,
+// });
+
+// const mapDispatchToProps = {
+//   onSubmit: (name, number) => dispatch(contactsAction.addContact(name, number)),
+// };
 
 export default ContactForm;

@@ -1,4 +1,4 @@
-import React from 'react'; //при закоментированом варианте нужно сюда дописать { Component }
+import React from 'react';
 import { useState, useEffect } from 'react';
 
 //libraries
@@ -87,10 +87,6 @@ function App() {
         name={state.name}
         number={state.number}
         onAddContact={handleAddContact}
-        // onSubmit={this.formSubmit}
-        // input={this.state}
-        // options={this}
-        // optionsTel={this.handleTelChange}
       />
       <h2>Contacts</h2>
       {state.contacts.length > 1 && (
@@ -100,45 +96,5 @@ function App() {
     </div>
   );
 }
-
-// Первый вариант
-// class App extends Component {
-//   state = {
-//     inputValue: '',
-//     name: '',
-//     tel: '',
-//   };
-
-//   // handleChange = event => {
-//   //   const { name, value } = event.currentTarget;
-//   //   this.setState({ [name]: value });
-//   // };
-
-//   // handleSubmit = event => {
-//   //   event.preventDefault();
-//   //   console.log(this.state);
-//   // };
-
-//   formSubmit = event => {
-//     console.log(event);
-//   };
-
-//   render() {
-//     return (
-//       <>
-//         <h1>Phonebook</h1>
-//         <ContactForm
-//           onSubmit={this.formSubmit}
-//           // input={this.state}
-//           // options={this}
-//           // optionsTel={this.handleTelChange}
-//         />
-//         <h2>Contacts</h2>
-//         {/* <Filter ... /> */}
-//         {/* <ContactList ... /> */}
-//       </>
-//     );
-//   }
-// }
 
 export default App;
